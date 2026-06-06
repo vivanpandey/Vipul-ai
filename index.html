@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vipul AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+font-family:Arial;
+text-align:center;
+padding:20px;
+}
+input{
+width:90%;
+padding:10px;
+font-size:18px;
+}
+button{
+padding:10px 20px;
+font-size:18px;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>Vipul AI Video Generator</h1>
+
+<input id="prompt" placeholder="Video prompt likho">
+
+<br><br>
+
+<button onclick="generate()">
+Generate Video
+</button>
+
+<p id="result"></p>
+
+<script>
+function generate(){
+let prompt =
+document.getElementById("prompt").value;
+
+document.getElementById("result").innerHTML =
+"Prompt mila: " + prompt;
+}
+</script>
+
+</body>
+</html>
